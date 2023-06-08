@@ -15,15 +15,17 @@ Your blockchain in development can be configured with `config.yml`. To learn mor
 
 ### Web Frontend
 
-Ignite CLI has scaffolded a Vue.js-based web app in the `vue` directory. Run the following commands to install dependencies and start the app:
+Ignite CLI has scaffolded a React.js-based web app in the `react` directory. Run the following commands to install dependencies and start the app:
+`ignite scaffold react`
+`ignite generate hooks`
 
 ```
-cd vue
+cd react
 npm install
-npm run serve
+npm run dev
 ```
 
-The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Ignite front-end development](https://github.com/ignite/web).
+[Details](https://docs.ignite.com/clients/react)
 
 ## Release
 To release a new version of your blockchain, create and push a new tag with `v` prefix. A new draft release with the configured targets will be created.
