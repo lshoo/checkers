@@ -1,6 +1,9 @@
 vue/node_modules
 vue/dist
+react/node_modules
+react/dist
 release/
 .idea/
 .vscode/
 .DS_Store
+
