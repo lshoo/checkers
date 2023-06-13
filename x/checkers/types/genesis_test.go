@@ -63,4 +63,3 @@ func TestGenesisState_Validate(t *testing.T) {
 		})
 	}
 }
-

@@ -71647,6 +71647,11 @@ definitions:
     description: |-
       Version defines the versioning scheme used to negotiate the IBC verison in
       the connection handshake.
+  lshoo.checkers.checkers.MsgCreateGameResponse:
+    type: object
+    properties:
+      gameIndex:
+        type: string
   lshoo.checkers.checkers.MsgCreatePostResponse:
     type: object
   lshoo.checkers.checkers.Params:

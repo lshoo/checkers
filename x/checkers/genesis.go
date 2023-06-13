@@ -10,7 +10,7 @@ import (
 func InitGenesis(ctx sdk.Context, k keeper.Keeper, genState types.GenesisState) {
 	// Set if defined
 	// if genState.SystemInfo != nil {
-		k.SetSystemInfo(ctx, genState.SystemInfo)
+	k.SetSystemInfo(ctx, genState.SystemInfo)
 	// }
 	// Set all the storedGame
 	for _, elem := range genState.StoredGameList {

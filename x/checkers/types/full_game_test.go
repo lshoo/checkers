@@ -1,20 +1,19 @@
-
 package types_test
 
 import (
 	"strings"
 	"testing"
 
+	sdk "github.com/cosmos/cosmos-sdk/types"
 	rules "github.com/lshoo/checkers/x/checkers/rules"
 	testutil "github.com/lshoo/checkers/x/checkers/testutil"
 	types "github.com/lshoo/checkers/x/checkers/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )
 
 const (
-    alice = testutil.Alice
-    bob   = testutil.Bob
+	alice = testutil.Alice
+	bob   = testutil.Bob
 )
 
 func GetStoredGame1() types.StoredGame {
