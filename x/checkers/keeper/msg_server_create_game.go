@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 	"strconv"
-	
+
 	rules "github.com/lshoo/checkers/x/checkers/rules"
 	"github.com/lshoo/checkers/x/checkers/types"
 

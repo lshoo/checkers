@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	keepertest "github.com/lshoo/checkers/testutil/keeper"
-	"github.com/lshoo/checkers/x/checkers/types"
 	"github.com/lshoo/checkers/x/checkers"
 	"github.com/lshoo/checkers/x/checkers/keeper"
+	"github.com/lshoo/checkers/x/checkers/types"
 	"github.com/stretchr/testify/require"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -235,4 +235,3 @@ func TestCreateGameFarFuture(t *testing.T) {
 		Red:   carol,
 	}, game1)
 }
-
