@@ -54,6 +54,7 @@ func TestCreate1GameHasSaved(t *testing.T) {
 		Turn:  "b",
 		Black: bob,
 		Red:   carol,
+		Winner: "*",
 	}, game1)
 }
 
@@ -164,6 +165,7 @@ func TestCreate3GamesHasSaved(t *testing.T) {
 		Turn:  "b",
 		Black: bob,
 		Red:   carol,
+		Winner: "*",
 	}, game1)
 	game2, found2 := keeper.GetStoredGame(ctx, "2")
 	require.True(t, found2)
@@ -173,6 +175,7 @@ func TestCreate3GamesHasSaved(t *testing.T) {
 		Turn:  "b",
 		Black: carol,
 		Red:   alice,
+		Winner: "*",
 	}, game2)
 	game3, found3 := keeper.GetStoredGame(ctx, "3")
 	require.True(t, found3)
@@ -182,6 +185,7 @@ func TestCreate3GamesHasSaved(t *testing.T) {
 		Turn:  "b",
 		Black: alice,
 		Red:   bob,
+		Winner: "*",
 	}, game3)
 }
 
@@ -210,6 +214,7 @@ func TestCreate3GamesGetAll(t *testing.T) {
 		Turn:  "b",
 		Black: bob,
 		Red:   carol,
+		Winner: "*",
 	}, games[0])
 	require.EqualValues(t, types.StoredGame{
 		Index: "2",
@@ -217,6 +222,7 @@ func TestCreate3GamesGetAll(t *testing.T) {
 		Turn:  "b",
 		Black: carol,
 		Red:   alice,
+		Winner: "*",
 	}, games[1])
 	require.EqualValues(t, types.StoredGame{
 		Index: "3",
@@ -224,6 +230,7 @@ func TestCreate3GamesGetAll(t *testing.T) {
 		Turn:  "b",
 		Black: alice,
 		Red:   bob,
+		Winner: "*",
 	}, games[2])
 }
 
@@ -256,5 +263,6 @@ func TestCreateGameFarFuture(t *testing.T) {
 		Turn:  "b",
 		Black: bob,
 		Red:   carol,
+		Winner: "*",
 	}, game1)
 }
